@@ -13,4 +13,5 @@ phases:
     finally:
       - echo build complete
 artifacts:
-  files: /index.js
+  files: 
+  - '**/*'
