@@ -13,4 +13,4 @@ phases:
     finally:
       - echo build complete
 artifacts:
-  files: imagedefinitions.json
+  files: /index.js
