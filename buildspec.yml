@@ -1,5 +1,16 @@
 version: 0.1
 
+permissions:
+  - object: /home/centos
+    owner: centos
+    group: centos
+    type:
+      - directory
+      - file
+  - object: /home/centos/cdtest/scripts
+    mode: +x
+    type: 
+      - file
 
 phases:
   install:
