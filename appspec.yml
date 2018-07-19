@@ -1,11 +1,6 @@
 
-version: 0.1
-os: linus
+version: 0.2
+os: linux
 files:
   - source: / 
     destination: /home/centos/cdtest
-hooks:
-  ApplicationStop:
-    - location: pm2 stop index -name "cdtest"
-  AfterInstall:
-    - location: pm2 start index -name "cdtest"
