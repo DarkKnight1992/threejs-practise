@@ -6,6 +6,5 @@ files:
     destination: /home/centos/cdtest
 hooks:
   AfterInstall:
-    - location: scripts/start
+    - location: scripts/start_server
       timeout: 300
-      runas: centos
