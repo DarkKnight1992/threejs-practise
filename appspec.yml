@@ -6,6 +6,6 @@ files:
     destination: /home/centos/cdtest
 hooks:
   AfterInstall:
-    - location: pm2 start index.js
+    - location: scripts/start
       timeout: 300
       runas: centos
