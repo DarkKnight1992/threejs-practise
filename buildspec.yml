@@ -12,3 +12,5 @@ phases:
       npm run  build
     finally:
       - echo build complete
+artifacts:
+  files: imagedefinitions.json
