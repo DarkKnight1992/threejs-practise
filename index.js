@@ -12,3 +12,5 @@ app.listen(app.get('port'), function(err) {
   } else {
     console.log('Running on port: ' + app.get('port')); }
 });
+
+// User is not authorized to perform: sts:AssumeRole on resource aws codebuild

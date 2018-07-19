@@ -1,0 +1,17 @@
+version: 0.1
+
+
+phases:
+  install:
+    commands:
+      npm install
+    finally:
+      - echo Install complete  
+  build:
+    commands:
+      npm run  build
+    finally:
+      - echo build complete
+  post_build:
+    commands:
+      npm start
