@@ -9,7 +9,7 @@ phases:
       - echo Install complete  
   build:
     commands:
-      npm run  build
+      npm run build
     finally:
       - echo build complete
 artifacts:
