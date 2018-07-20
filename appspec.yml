@@ -12,12 +12,10 @@ permissions:
     type:
       - directory
       - file
-  - object: ./scripts/start_server.sh
-     mode: 777
-
+    
 
 hooks:
   ApplicationStart:
-    - location: /scripts/start_server.sh
+    - location: /scripts/start_server
       timeout: 300
       runas: centos
