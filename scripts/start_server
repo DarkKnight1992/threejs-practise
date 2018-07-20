@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 source /home/centos/.bash_profile
-
 cd /home/centos/cdtest
 npm install pm2 -g
-pm2 start index.js
+pm2 start index.js --update-env
