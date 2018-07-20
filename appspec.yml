@@ -4,8 +4,13 @@ os: linux
 files:
   - source: / 
     destination: /home/centos/cdtest
+permissions:
+  - object: /
+    pattern: "**"
+    owner: centos
+    group: centos
 hooks:
-  AfterInstall:
+  ApplicationStart:
     - location: scripts/start_server
       timeout: 300
-      runas: root
+      runas: centos
