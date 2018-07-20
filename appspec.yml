@@ -4,13 +4,7 @@ os: linux
 files:
   - source: / 
     destination: /home/centos/cdtest
-permissions:
-  - object: /home/centos/cdtest/scripts/
-    pattern: "**"
-    owner: centos
-    group: centos
-    mode: 777
 hooks:
   ApplicationStart:
-    - location: /home/centos/cdtest/scripts/start_server
+    - location: scripts/start_server
       timeout: 300
