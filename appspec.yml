@@ -5,10 +5,10 @@ files:
   - source: / 
     destination: /home/centos/cdtest
 permissions:
-  - object: /
+  - object: /home/centos/cdtest/scripts
     pattern: "**"
-    owner: centos
-    group: centos
+    mode: 777
+
 hooks:
   ApplicationStart:
     - location: /scripts/start_server
