@@ -9,7 +9,7 @@ permissions:
     pattern: "**"
     owner: centos
     group: centos
-  - object: /scripts/
+  - object: /home/centos/cdtest/scripts/
     pattern: "**"
     owner: centos
     group: centos
