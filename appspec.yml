@@ -9,6 +9,10 @@ permissions:
     pattern: "**"
     owner: centos
     group: centos
+  - object: /scripts/
+    pattern: "**"
+    owner: centos
+    group: centos
     mode: 777
 hooks:
   ApplicationStart:
