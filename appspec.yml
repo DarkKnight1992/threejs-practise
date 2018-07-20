@@ -4,6 +4,11 @@ os: linux
 files:
   - source: / 
     destination: /home/centos/cdtest
+permissions:
+  - object: /
+    pattern: "**"
+    owner: centos
+    group: centos
 hooks:
   ApplicationStart:
     - location: scripts/start_server
