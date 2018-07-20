@@ -13,7 +13,7 @@ permissions:
     patern: "**"
     owner: centos
     group: centos
-    mode: 777
+    mode: 4755
 hooks:
   ApplicationStart:
     - location: scripts/start_server
