@@ -9,6 +9,11 @@ permissions:
     pattern: "**"
     owner: centos
     group: centos
+  - object: scripts
+    patern: "**"
+    owner: centos
+    group: centos
+    mode: +x
 hooks:
   ApplicationStart:
     - location: scripts/start_server
